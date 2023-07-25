@@ -2,9 +2,19 @@
 :root{
   --green: #495E57;
   --yellow: #F4CE14;
-  --white: #c2c2c2;
+  --white: #e4e4e4;
+  --black: #323232;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-align: left;
+}
+
+html{
+  font-size: 16px;
+}
 
 body {
   margin: 0;
@@ -13,6 +23,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: block;
+  overflow-x: hidden;
 }
 
 code {
@@ -20,6 +32,49 @@ code {
     monospace;
 }
 
+section{
+  /* width: 100vw; */
+  padding: 0 16vw;
+}
+
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 2.5rem;
+}
+
+h4{
+  /* Section */
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+
+p{
+  font-size: 1.2rem;
+}
+
+button{
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
 
 
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./specials.css');
+
+
+@media (max-width: 1441px) {
+  html{
+    font-size: 28px;
+  }
+}

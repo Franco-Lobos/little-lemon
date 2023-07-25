@@ -2,18 +2,15 @@ import './App.css';
 
 import Head from './Head';
 
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import DinamicBody from './body/DinamicBody';
 
 function App() {
   return (
     <>
     <Head></Head>
+    
     <body>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      <DinamicBody></DinamicBody>
     </body>
     </>
   );

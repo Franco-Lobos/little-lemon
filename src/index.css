@@ -1,3 +1,11 @@
+
+:root{
+  --green: #495E57;
+  --yellow: #F4CE14;
+  --white: #c2c2c2;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +19,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+@import url('./header.css');

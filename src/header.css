@@ -1,0 +1,28 @@
+header{
+    background-color:var(--green);
+    color: var(--white);
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 20vw;
+    gap: 1rem;
+
+}
+
+.header-logo{
+    max-height: 5vh;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.header-links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: 800;
+    text-transform: uppercase;
+}

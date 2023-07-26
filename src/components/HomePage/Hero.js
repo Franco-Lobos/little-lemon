@@ -1,8 +1,8 @@
-import heroImg from '../img/Asset20.png'
+import heroImg from '../../img/Asset20.png'
 
+import { Link } from 'react-router-dom'
 
 const Hero = ()=>{
-    
 
     const description =`
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere ex quis sem accumsan interdum.
@@ -13,7 +13,7 @@ const Hero = ()=>{
                 <h3>Little Lemmon</h3>
                 <h4>Chicago</h4>
                 <p>{description}</p>
-                <button>Book a table</button>
+                <Link to={'/booking'} className='nav-ite'><button>Book a table</button></Link>
             </div>
             <img src={heroImg}></img>
         </section>

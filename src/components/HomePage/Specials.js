@@ -1,8 +1,9 @@
 import SpecialItem from './SpecialItem'
 
-import empanadaImg from '../img/empanada.jpeg'
-import ensaladaImg from '../img/ensalada.jpeg'
-import asadoImg from '../img/asado.webp'
+
+import empanadaImg from '../../img/empanada.jpeg'
+import ensaladaImg from '../../img/ensalada.jpeg'
+import asadoImg from '../../img/asado.webp'
 
 const Specials = ()=>{
 
@@ -28,6 +29,8 @@ const Specials = ()=>{
             img:asadoImg
         }
     ]
+
+
     return(
         <section id="specials">
             <div className="specials-head">

@@ -1,17 +1,13 @@
-import './App.css';
-
 import Head from './Head';
-
-import DinamicBody from './body/DinamicBody';
+import DinamicBody from './components/body/DinamicBody';
 
 function App() {
   return (
     <>
     <Head></Head>
-    
-    <body>
+    <div id="body">
       <DinamicBody></DinamicBody>
-    </body>
+    </div>
     </>
   );
 }

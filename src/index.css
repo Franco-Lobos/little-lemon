@@ -65,16 +65,79 @@ button{
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   text-align: center;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--green) !important;
+  color:var(--yellow) !important;
 }
 
 
 @import url('./styles/header.css');
 @import url('./styles/hero.css');
 @import url('./styles/specials.css');
+@import url('./styles/bookingForm.css');
 
 
-@media (max-width: 1441px) {
+
+@media (min-width: 1441px) and (max-width: 6000px){
   html{
-    font-size: 28px;
+    font-size: 20px !important;
+  }
+  
+  header img{
+    max-height: 7vh !important;
+  }
+
+  .header-links{
+    justify-content: space-between;
+  }
+
+  #hero img{
+    width: 15vw;
+  }
+
+  .hero-text{
+    padding: 1rem 2rem;
+  }
+
+  .form-main{
+    padding-top :15vh;
+    display: grid;
+    grid-template-areas:
+    "head head"
+    "body1 body2"
+    "body3 body4"
+    "button button"
+    ;
+    align-items: center;
+  }
+  .form-title{
+    grid-area: head;
+  }
+  .form-field:nth-of-type(1){
+    grid-area: body1;
+  }
+
+  .form-field:nth-of-type(2){
+    grid-area: body2;
+  }
+  .form-field:nth-of-type(3){
+    grid-area: body3;
+  }
+  .form-field:nth-of-type(4){
+    grid-area: body4;
+  }
+
+  button{
+    grid-area: button;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1440px) {
+  html{
+    font-size: 24px;
   }
 }

@@ -1,12 +1,14 @@
 header{
     background-color:var(--green);
     color: var(--white);
-    font-weight: 600;
     display: grid;
     grid-template-columns: 1fr 3fr;
     justify-content: space-between;
     align-items: center;
     padding: 1vh 20vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
 }
 
 .header-logo{
@@ -18,10 +20,27 @@ header{
 .header-links{
     display: flex;
     align-items: center;
-    gap: 0.7rem;
+    gap: 2rem;
     list-style: none;
     font-weight: 800;
     text-transform: uppercase;
     flex-wrap: wrap;
 }
+
+.header-links .nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.header-links .nav-item:hover{
+    color: var(--yellow);
+}
+
+.header-links .nav-item:active{
+    color: var(--yellow);
+}
+
 

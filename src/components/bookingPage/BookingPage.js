@@ -1,7 +1,9 @@
 import {useState, useEffect, useReducer } from "react";
 import BookingForm from "./BookingForm";
 
-import {fetchAPI }from '../../utils/fetchData'
+import {fetchAPI }from '../../utils/fetchData';
+
+import BookingData from "./BookingData";
 
 const BookingPage =()=>{
     
@@ -31,15 +33,15 @@ const BookingPage =()=>{
 
     return (
         <>
-        {reservated
+        {!reservated
         ?
             <BookingForm availableTimes={availableTimes} dispatchAvailableTimes={dispatchAvailableTimes} ></BookingForm>
         :
-            <>
-                <p>A tabel has been reservated, do you want do make a new one?</p>
+            <div className="chosen-table">
+                <h2>A tabel has been reservated, do you want do make a new one?</h2>
+                <BookingData></BookingData>
                 <button onClick={()=>setReservated(0)}> Make  new reservation</button>
-            </>
-            
+            </div>
 
         }
         </>

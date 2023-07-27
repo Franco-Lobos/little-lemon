@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3vh;
-    padding-top: 3vh;
+    padding-top: 12vh;
     padding-bottom: 3vh;
 }
 

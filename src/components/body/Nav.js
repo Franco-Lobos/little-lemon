@@ -15,7 +15,7 @@ const Nav = ()=>{
         <nav>
             <ul className="header-links">
                 {links.map(link=>
-                    <li key={link.name}><Link to={link.href} className='nav-ite'>{link.name}</Link></li>
+                    <li key={link.name}><Link to={link.href} className='nav-item'>{link.name}</Link></li>
                 )}
             </ul>
         </nav>

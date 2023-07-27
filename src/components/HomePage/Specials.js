@@ -7,6 +7,10 @@ import asadoImg from '../../img/asado.webp'
 
 const Specials = ()=>{
 
+    var datt ={
+        door: 2,
+        tiene: 'yes'
+    }
     const specialMenus =[
         {
             id: 1,
@@ -41,7 +45,7 @@ const Specials = ()=>{
             <div className="special-cards-main">
             {
                 specialMenus.map((it)=>
-                <SpecialItem item={it}></SpecialItem>
+                <SpecialItem item={it} ></SpecialItem>
                 )
             }
             </div>

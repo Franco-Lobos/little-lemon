@@ -11,6 +11,7 @@ const Hero = ()=>{
         <section id="hero">
             <div className="hero-text">
                 <h3>Little Lemmon</h3>
+                {/* <div>{true}</div> */}
                 <h4>Chicago</h4>
                 <p>{description}</p>
                 <Link to={'/booking'} className='nav-ite'><button>Book a table</button></Link>

@@ -4,11 +4,11 @@ const Nav = ()=>{
 
     const links=[
         {name:"Home", href:"/"},
-        // {name:"About", href:"./about"},
-        // {name:"Menu", href:"./menu"},
-        // {name:"Reservations", href:"./reservations"},
-        // {name:"Order Online", href:"./order-online"},
-        {name:"Book a Table", href:"/booking"}
+        {name:"About", href:"./about"},
+        {name:"Menu", href:"./menu"},
+        {name:"Reservations", href:"./reservations"},
+        {name:"Order Online", href:"./order-online"},
+        // {name:"Book a Table", href:"/booking"}
 
     ]
     return(
